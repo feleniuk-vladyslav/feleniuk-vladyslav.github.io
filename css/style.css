@@ -10,7 +10,7 @@ header {
 nav {
   position: fixed;
   width: 100%;
-  height: 50px;
+  height: 55px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
@@ -250,7 +250,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 450px;
+  max-width: 450px;
 }
 
 .form .feed-form input {
@@ -551,7 +551,7 @@ footer a:hover {
   .hamburger {
     display: block;
     position: absolute;
-    left: 10px;
+    left: 15px;
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -563,9 +563,9 @@ footer a:hover {
     height: 2px;
     width: 100%;
     background-color: #fff;
-    margin-bottom: 2px;
-    -webkit-transition: 0.5s all;
-    transition: 0.5s all;
+    margin-bottom: 4px;
+    -webkit-transition: 0.4s all;
+    transition: 0.4s all;
   }
   .hamburger_active span {
     margin-bottom: -2px;
@@ -632,7 +632,7 @@ footer a:hover {
 
 @media (max-width: 575px) {
   nav {
-    height: 30px;
+    height: 40px;
   }
   header {
     height: 30px;
