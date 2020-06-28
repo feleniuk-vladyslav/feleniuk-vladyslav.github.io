@@ -1,0 +1,297 @@
+header
+	position: relative
+	height: 50px
+	
+
+nav
+	position: fixed
+	width: 100%
+	height: 55px
+	background-color: rgba(0,0,0,0.2)
+	z-index: 5
+
+
+.hamburger
+	display: none
+
+.menu
+	display: flex
+	justify-content: flex-end
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	&_link
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $main-color
+	&_item
+		padding-right: 28px
+		&:last-child
+			border-right: none
+
+.subheader
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 84px
+	background-color: none
+	// background-color: rgba(0, 0, 0, 0.6)
+	&_logo
+		display: block
+		max-width: 10%
+		margin-top: 16px
+
+
+.promo
+	min-height: 800px
+	margin-top: -50px
+	background: url('../img/bg_global.jpg') center center/cover no-repeat
+	padding: 400px 0 135px 0
+	background-attachment: fixed
+	&_header
+		margin-top: 220px
+		color: $main-color
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 60px
+		line-height: 60px
+		margin: 0
+		text-align: center
+	&_subheader
+		color: $second-color
+		font-weight: 700
+		text-transform: uppercase
+		font-size: 36px
+		line-height: 36px
+		margin: 0
+		margin-top: 22px
+		text-align: center
+	&_descr
+		color: #ffffff
+		font-size: 18px
+		font-weight: 400
+		line-height: 24px
+		text-align: center
+		margin-top: 23px
+
+.reasons
+	padding: 71px 0 65px 0
+	&_block
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 35px
+	&_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: $second-color
+		border-radius: 100%
+	&_descr
+		width: 343px
+	&_text
+		color: #202020
+		font-size: 15px
+		font-weight: 300
+		line-height: 21px
+
+.title
+	position: relative
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	line-height: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
+.subtitle
+	position: relative
+	margin-top: 19px
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
+
+.require
+	padding: 68px 0 84px 0
+	&_block 
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0px
+	&_title 
+		color: $second-color
+		font-size: 22px
+		font-weight: 400
+	&_list 
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li 
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before 
+				content: ''
+				display: block 
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px 
+				height: 20px
+				background: url(../icons/blue_icon.png) center (center / cover) no-repeat
+	&_descr 
+		margin-top: 25px
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+		color: $second-color
+	.warning 
+		.require_title
+			color: $second-color
+		.require_list
+			li 
+				&:before
+					background: url(../icons/red_icon.png) center (center / cover) no-repeat
+
+.form 
+	margin-top: 30px
+	.contacts
+		color: #020202
+	.feed-form
+		display: flex
+		flex-direction: column
+		max-width: 450px
+		input
+			border-width: 0 0 2px
+			height: 50px
+			// border-radius: 5px
+			background-color: #fff
+			margin-bottom: 15px
+			border-style: inset  //тільки нижня має бути
+			padding: 0 20px
+			color: #181616e3
+			font-size: 14px
+			font-weight: 300
+			&:nth-child(3)
+				margin-bottom: 20px
+		textarea
+			height: 100px
+			border-radius: 5px
+			background-color: #fff
+			margin-bottom: 15px
+			border-style: inset
+			padding: 15px 20px
+			color: #181616e3
+			font-size: 14px
+			font-weight: 300
+
+.form_profile
+	display: flex
+	flex-direction: column
+	// padding-left: 50px
+	margin: 50px 0 50px 0
+	text-align: center
+	justify-content: center
+	.div
+		margin-top: 10px
+	
+
+.map
+	position: relative
+	padding: 20px 0 20px 0
+
+
+
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_social
+		width: 80px //поміняв зі 160
+		display: flex
+		justify-content: center
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716c5
+			border-radius: 100%
+			i 
+				color: #ffffff
+
+
+.button_feed
+	display: inline-block
+	margin-top: 10px
+	font-family: arial,sans-serif
+	font-size: 12px
+	font-weight: bold
+	color: rgb(68,68,68)
+	text-decoration: none
+	user-select: none
+	padding: 15px
+	// padding: .2em 1.2em
+	outline: none
+	border: 1px solid rgba(0,0,0,.1)
+	border-radius: 2px
+	background: rgb(245,245,245) linear-gradient(#f4f4f4, #f1f1f1)
+	transition: all .218s ease 0s
+	&:hover
+		color: rgb(24,24,24)
+		border: 1px solid rgb(198,198,198)
+		background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1)
+		box-shadow: 0 1px 2px rgba(0,0,0,.1)
+		&:active
+			color: rgb(51,51,51)
+			border: 1px solid rgb(204,204,204)
+			background: rgb(238,238,238) linear-gradient(rgb(238,238,238), rgb(224,224,224))
+			box-shadow: 0 1px 2px rgba(0,0,0,.1) inset
+// input[type=text]
+//     width: 100%
+//     padding: 12px 20px
+//     margin: 8px 0
+//     box-sizing: border-box
+//     border: none
+//     border-bottom: 2px solid red
+
+
+.vacancy
+	display: inline-block
+	list-style: none
+	position: relative
+	&_bg
+		display: block
+		max-height: 300px
+
+
+
+
+.xs-visible 
+	display: none
