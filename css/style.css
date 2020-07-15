@@ -242,10 +242,6 @@ nav {
   margin-top: 30px;
 }
 
-.form .contacts {
-  color: #020202;
-}
-
 .form .feed-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,8 +301,7 @@ nav {
 }
 
 .map {
-  position: relative;
-  padding: 20px 0 20px 0;
+  margin-top: 100px;
 }
 
 footer {
@@ -395,15 +390,72 @@ footer a:hover {
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
 }
 
-.vacancy {
-  display: inline-block;
-  list-style: none;
-  position: relative;
+.promo_mid {
+  min-height: 800px;
+  margin-top: -50px;
+  background: url("../img/bg_global.jpg") center center/cover no-repeat;
+  padding: 400px 0 135px 0;
+  background-attachment: scroll;
 }
 
-.vacancy_bg {
+.vacancy {
   display: block;
-  max-height: 300px;
+  margin-top: 50px;
+}
+
+.vacancy .img {
+  margin-left: -15px;
+}
+
+.vacancy .li {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  list-style-type: decimal;
+}
+
+.vacancy .li .text {
+  padding: 15px 0;
+  color: #003cff;
+  font-size: 20px;
+}
+
+.vacancy_spec {
+  font-size: 20px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: start;
+}
+
+.profile {
+  margin: -50px;
+  padding: 50px 0;
+  background-color: #ddd4c2;
+}
+
+.profile .col-md-6 {
+  padding-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile .col-md-4 {
+  padding-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile .col-md-12 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 
 .xs-visible {
@@ -533,6 +585,16 @@ footer a:hover {
   }
   .footer_wrapper > div:nth-child(3) {
     width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .vacancy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .vacancy_img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
