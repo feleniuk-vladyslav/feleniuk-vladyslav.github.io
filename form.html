@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Global Personal</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css"> 
 </head>
@@ -27,8 +29,8 @@
                 <li class="menu_item"><a href="index.html" class="menu_link">Главная</a></li>
                 <li class="menu_item"><a href="vacancy.html" class="menu_link">Вакансии</a></li>
                 <li class="menu_item"><a href="form.html" class="menu_link">Анкета</a></li>
-                <li class="menu_item"><a href="#require" class="menu_link">Вопросы и ответы</a></li>
-                <li class="menu_item"><a href="#" class="menu_link">Контакты</a></li>
+                <li class="menu_item"><a href="faq.html" class="menu_link">Вопросы и ответы</a></li>
+                <li class="menu_item"><a href="index.html#form" class="menu_link">Контакты</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -40,191 +42,200 @@
     
     <section class="profile" id="profile">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <form class="feed-form" action="#">
-                        <label for="client_name">
-                            <span>Введите имя и фамилию</span>
-                        </label>
-                        <input type="text" name="username" placeholder="Ваше имя и фамилия"/>
-                    </form>
-                </div>
-                <div class="col-md-6">
-                    <label for="client_email">
-                        <span>Введите ваш e-mail</span>
-                    </label>
-                    <input type="email" placeholder="example@domain.com" type="email"/>
-                </div>
-                <div class="col-md-6">
-                    <label for="date">Дата рождения</label>
-                    <input type="date" id="date" name="date"/>
-                </div>
-                <div class="col-md-6">
-                    <label for="phone">Введите номер телефона</label>
-                    <input name="phone" placeholder="+380670000000" type="phone">
-                </div>
-                <div class="col-md-4">
-                    <label for="marital status">Семейное положение</label>
-                        <select name="marital status" id="marital status">
-                        <option value="1">Замужем</option>
-                        <option value="2">Не женатая</option>
-                        <option value="3">Разведённая</option>
-                        <option value="4">Вдова</option>
-                        <option value="5">Гражданский брак</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    Есть ли у Вас дети? Напишите сколько детей и возраст
-                    <textarea style="resize:none" placeholder="Ваши коментарии" id="area_children" rows="3" cols="35" name="" ></textarea>
-                </div>
-                <div class="col-md-4">
-                    <label for="german">Знание немецкого языка</label>
-                        <select name="german" id="german">
-                        <option value="1">Знаю несколько слов</option>
-                        <option value="2">Могу сказать пару предложений</option>
-                        <option value="3">Коммуникативный уровень языка</option>
-                        <option value="4">Хорошо знаю язык</option>
-                        <option value="5">Свободно владею немецким</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label for="city">Введите город</label>
-                    <input type="city" type="city">
-                </div>
-                <div class="col-md-4">
-                    <label for="adr">Введите адресс</label>
-                    <input type="adr" type="adr">
-                </div>
-                <div class="col-md-4">
-                    <label for="zip">Введите индекс</label>
-                    <input type="zip" placeholder="30-300" type="adr">
-                </div>
-                <div class="col-md-6">
-                    Есть ли у вас проблемы со спиной
-                    <div>
-                        <p><input type="radio" name="health" value="Да"/> Да </p>
+            <form class="feed-form" action="#">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="client_name">Введите имя и фамилию</label>
+                        <input type="text" class="form-control" name="username" placeholder="Ваше имя и фамилия"/>
                     </div>
-                    <div>
-                        <p><input type="radio" name="health" value="Нет"/> Нет </p>
+                    <div class="col-md-6 form-group">
+                        <label for="client_email">Введите ваш e-mail</label>
+                        <input type="email" class="form-control" placeholder="example@domain.com" type="email"/>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    Хроничиские заболевания
-                    <div>
-                        <p><input type="radio" name="health2" value="Да"/> Да </p>
+                    <div class="col-md-6 form-group">
+                        <label for="date">Дата рождения</label>
+                        <input type="date" class="form-control" id="date" name="date"/>
                     </div>
-                    <div>
-                        <p><input type="radio" name="health2" value="Нет"/> Нет </p>
+                    <div class="col-md-6 form-group">
+                        <label for="phone">Введите номер телефона</label>
+                        <input name="phone" class="form-control" placeholder="+380670000000" type="phone">
                     </div>
-                </div>
-                <div class="col-md-6">
-                    Есть ли у вас алергия
-                    <div>
-                        <p><input type="radio" name="health3" value="Да"/> Да </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="health3" value="Нет"/> Нет </p>
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6">
-                    Питание
-                    <div>
-                        <p><input type="radio" name="health4" value="Да"/> Обычное </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="health4" value="Нет"/> Вегетарианское меню </p>
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6">
-                    Вы курите ?
-                    <div>
-                        <p><input type="radio" name="smoking" value="Да"/> Да </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="smoking" value="Нет"/> Нет </p>
-                    </div>
-                    <br />
-                </div>
-                <div class="col-md-6">
-                    Курсы первой медицинской помощи
-                    <div>
-                        <p><input type="radio" name="firstaid" value="Да"/> Да </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="firstaid" value="Нет"/> Нет </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    Курсы по опеке
-                    <div>
-                        <p><input type="radio" name="firstaid2" value="Да"/> Да </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="firstaid2" value="Нет"/> Нет </p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    Ести ли у Вас водительское удостоверение
-                    <div>
-                        <p><input type="radio" name="driverlicense" value="Да"/> Да </p>
-                    </div>
-                    <div>
-                        <p><input type="radio" name="driverlicense" value="Нет"/> Нет </p>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    Опишите опыт в опеке <br>
-                    <textarea style="resize:none" placeholder="Ваш опыт" id="area_practice" rows="4" cols="130" name="" ></textarea>
-                </div>
-                <div class="col-md-4">
-                    Опишите Вашу профессию <br>
-                <textarea style="resize:none" placeholder="Ваша профессия" id="area_work" rows="4" cols="35" name="" ></textarea>
-                </div>
-                <div class="col-md-4">
-                    Когда планируете выехать <br>
-                    <textarea style="resize:none" placeholder="Ваш коментарий" id="date" rows="4" cols="35" name="" ></textarea>
-                </div>
-                <div class="col-md-4">
-                    Опишите Ваше хобби <br>
-                    <textarea style="resize:none" placeholder="Ваш коментарий" id="date" rows="4" cols="35" name="" ></textarea>
-                </div>
-                <div class="col-md-6">
-                    <label for="height">Напишите Ваш рост</label>
-                    <input type="number" name="" placeholder="Ваш рост"/>
-                </div>
-                <div class="col-md-6">
-                    <label for="weight">Напишите Ваш вес</label>
-                    <input type="number" name="" placeholder="Ваш вес"/>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        Добавьте скан первой страницы загранпаспорта
-                        <p><input type="file" name="foto" /></p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        Добавьте вашу фотографию
-                        <p><input type="file" name="foto" /></p>
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div>
-                        <input type="checkbox" name="clauzja" id="checkbox" require value="yes">
-                        <label for="checkbox" class="form-check-label">
-                            Wyrażam zgodę na przetwarzanie moich danych osobowych w celach rekrutacji, zgodnie z Ustawą z dn. 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późniejszymi zmianami)  
+                    <div class="col-md-6 form-group">
+                        <label for="marital status">Семейное положение</label>
+                        <select name="marital status" class="form-control" id="marital status">
+                            <option value="1">Замужем</option>
+                            <option value="2">Не женатая</option>
+                            <option value="3">Разведённая</option>
+                            <option value="4">Вдова</option>
+                            <option value="5">Гражданский брак</option>
+                        </select>
                     
-                            Виражаю згоду на збір та оброблення мої особистих даних з метою рекрутації, згідно з Законом з дня 20 серпня 1997 року про Охорону особистих даних  (Dz.U. з 2002 р. Nr 101, poz. 926 зі всімав внесеними змінами)
-                        </label>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="german">Знание немецкого языка</label>
+                        <select name="german" class="form-control" id="german">
+                            <option value="1">Знаю несколько слов</option>
+                            <option value="2">Могу сказать пару предложений</option>
+                            <option value="3">Коммуникативный уровень языка</option>
+                            <option value="4">Хорошо знаю язык</option>
+                            <option value="5">Свободно владею немецким</option>
+                        </select>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="area_children">Есть ли у Вас дети? Напишите сколько детей и возраст</label>
+                        <textarea style="resize:none" class="form-control" placeholder="Ваши коментарии" id="area_children" rows="3" cols="35" name="" ></textarea>
+                    </div>
+                
+                    <div class="col-md-4 form-group">
+                        <label for="city">Введите город</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="adr">Введите адресс</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="zip">Введите индекс</label>
+                        <input type="zip" class="form-control" placeholder="30-300" >
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Есть ли у вас проблемы со спиной
+                        <div>
+                            <p><input type="radio" name="health" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="health" value="Нет"/> Нет </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Хроничиские заболевания
+                        <div>
+                            <p><input type="radio" name="health2" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="health2" value="Нет"/> Нет </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Есть ли у вас алергия
+                        <div>
+                            <p><input type="radio" name="health3" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="health3" value="Нет"/> Нет </p>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Питание
+                        <div>
+                            <p><input type="radio" name="health4" value="Да"/> Обычное </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="health4" value="Нет"/> Вегетарианское меню </p>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Вы курите ?
+                        <div>
+                            <p><input type="radio" name="smoking" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="smoking" value="Нет"/> Нет </p>
+                        </div>
+                        <br />
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Курсы первой медицинской помощи
+                        <div>
+                            <p><input type="radio" name="firstaid" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="firstaid" value="Нет"/> Нет </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Курсы по опеке
+                        <div>
+                            <p><input type="radio" name="firstaid2" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="firstaid2" value="Нет"/> Нет </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        Ести ли у Вас водительское удостоверение
+                        <div>
+                            <p><input type="radio" name="driverlicense" value="Да"/> Да </p>
+                        </div>
+                        <div>
+                            <p><input type="radio" name="driverlicense" value="Нет"/> Нет </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        Опишите опыт в опеке <br>
+                        <textarea style="resize:none" class="form-control" placeholder="Ваш опыт" id="area_practice" rows="4" cols="120" name="" ></textarea>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        Опишите Вашу профессию <br>
+                    <textarea style="resize:none" class="form-control" placeholder="Ваша профессия" id="area_work" rows="4" cols="35" name="" ></textarea>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        Когда планируете выехать <br>
+                        <textarea style="resize:none" class="form-control" placeholder="Ваш коментарий" id="date" rows="4" cols="35" name="" ></textarea>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        Опишите Ваше увлечения <br>
+                        <textarea style="resize:none" class="form-control" placeholder="Ваш коментарий" id="date" rows="4" cols="35" name="" ></textarea>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="height">Напишите Ваш рост</label>
+                        <input type="number" name="" class="form-control" placeholder="Ваш рост"/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="weight">Напишите Ваш вес</label>
+                        <input type="number" name="" class="form-control" placeholder="Ваш вес"/>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <div>
+                            Добавьте скан первой страницы загранпаспорта
+                            <p><input type="file" class="form-control" name="photo" id="photo" /></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <div>
+                            Добавьте вашу фотографию
+                            <p><input type="file" class="form-control" name="photo" /></p>
+                        </div>
+                    </div>
+                    Добавьте вашу фотографию
+                    <div class="custom-file col-md-12">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Выбрать файл</label>
+                    </div>
+                    Добавьте скан первой страницы загранпаспорта
+                    <div class="col-md-12 form-group">
+                        <input type="file" class="custom-file-input" id="customFile lang="ru"">
+                        <label class="custom-file-label" for="customFile">Выбрать файл</label>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <div class="clauzja">
+                            <input type="checkbox" name="clauzja" id="checkbox" require value="yes">
+                            <label for="checkbox"  class="form-check-label">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych w celach rekrutacji, zgodnie z Ustawą z dn. 29 sierpnia 1997 r. o ochronie danych osobowych (Dz.U. z 2002 r. Nr 101, poz. 926 z późniejszymi zmianami)  
+                        
+                                Виражаю згоду на збір та оброблення мої особистих даних з метою рекрутації, згідно з Законом з дня 20 серпня 1997 року про Охорону особистих даних  (Dz.U. з 2002 р. Nr 101, poz. 926 зі всімав внесеними змінами)
+                            </label>
+                            <button type="submit" class="button_feed">Отправить</button>
+                        </div>
                     </div>
                     <div>
                         <!-- <button type="submit"></button> -->
                         <button type="submit" class="button_feed">Отправить</button>
                     </div>
                 </div>
-            </div>
+            </form>    
         </div>
     </section>
 
@@ -247,7 +258,7 @@
         </div> -->
         <!-- // Семейное положение : замужем , не женатая , розведенная , вдова , гражданский брак  -->
         <!-- <div>
-            Есть ли у Вас дети? Напишите сколько детей и возраст. <br>
+            Есть ли у Вас дети? Напишите сколько детей и возраст. < >
             <textarea style="resize:none" placeholder="Ваши коментарии" id="area_children" name="" ></textarea>
         </div>
         <div>
