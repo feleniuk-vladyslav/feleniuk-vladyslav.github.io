@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -230,12 +230,23 @@ nav {
   color: #636061;
 }
 
-.require .warning .require_title {
-  color: #636061;
+.profile {
+  margin-top: 80px;
 }
 
-.require .warning .require_list li:before {
-  background: url(../icons/red_icon.png) center center/cover no-repeat;
+.profile .feed-form .clauzja {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile .feed-form .button_feed {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .form {
@@ -279,25 +290,6 @@ nav {
   color: #181616e3;
   font-size: 14px;
   font-weight: 300;
-}
-
-.form_profile {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 50px 0 50px 0;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.form_profile .div {
-  margin-top: 10px;
 }
 
 .map {
@@ -403,7 +395,7 @@ footer a:hover {
   margin-top: 50px;
 }
 
-.vacancy .img {
+.vacancy_img {
   margin-left: -15px;
 }
 
@@ -417,7 +409,7 @@ footer a:hover {
 
 .vacancy .li .text {
   padding: 15px 0;
-  color: #003cff;
+  color: #460707;
   font-size: 20px;
 }
 
@@ -429,33 +421,27 @@ footer a:hover {
   text-align: start;
 }
 
-.profile {
-  margin: -50px;
-  padding: 50px 0;
-  background-color: #ddd4c2;
+.profile_ {
+  margin-top: 50px;
 }
 
-.profile .col-md-6 {
-  padding-top: 40px;
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  margin: 25px auto;
 }
 
-.profile .col-md-4 {
-  padding-top: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.faq_header {
+  margin-top: 100px;
 }
 
-.profile .col-md-12 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.faq_li {
+  list-style: decimal;
 }
 
 .xs-visible {
@@ -595,9 +581,7 @@ footer a:hover {
     display: flex;
   }
   .vacancy_img {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    max-width: 990px;
   }
 }
 
@@ -712,6 +696,9 @@ footer a:hover {
   }
   .form .feed-form {
     margin-top: 50px;
+  }
+  .vacancy_img {
+    max-width: 262px;
   }
 }
 

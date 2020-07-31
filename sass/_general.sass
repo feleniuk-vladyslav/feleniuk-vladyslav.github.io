@@ -38,7 +38,6 @@ nav
 	width: 100%
 	height: 84px
 	background-color: none
-	// background-color: rgba(0, 0, 0, 0.6)
 	&_logo
 		display: block
 		max-width: 10%
@@ -161,13 +160,18 @@ nav
 		font-weight: 300
 		line-height: 24px
 		color: $second-color
-	.warning 
-		.require_title
-			color: $second-color
-		.require_list
-			li 
-				&:before
-					background: url(../icons/red_icon.png) center (center / cover) no-repeat
+
+.profile
+	margin-top: 80px
+	.feed-form
+		.clauzja
+			justify-content: center
+			text-align: center
+		.button_feed
+			justify-content: center
+			text-align: center
+			margin-bottom: 50px
+
 
 .form 
 	margin-top: 30px
@@ -178,10 +182,9 @@ nav
 		input
 			border-width: 0 0 2px
 			height: 50px
-			// border-radius: 5px
 			background-color: #fff
 			margin-bottom: 15px
-			border-style: inset  //тільки нижня має бути
+			border-style: inset 
 			padding: 0 20px
 			color: #181616e3
 			font-size: 14px
@@ -199,15 +202,15 @@ nav
 			font-size: 14px
 			font-weight: 300
 
-.form_profile
-	display: flex
-	flex-direction: column
-	// padding-left: 50px
-	margin: 50px 0 50px 0
-	text-align: center
-	justify-content: center
-	.div
-		margin-top: 10px
+// .form_profile
+// 	display: flex
+// 	flex-direction: column
+// 	// padding-left: 50px
+// 	margin: 50px 0 50px 0
+// 	text-align: center
+// 	justify-content: center
+// 	.div
+// 		margin-top: 10px
 	
 .map
 	margin-top: 100px
@@ -287,7 +290,7 @@ footer
 .vacancy
 	display: block
 	margin-top: 50px
-	.img
+	&_img
 		margin-left: -15px
 		// margin-top: 100px
 	.li
@@ -297,7 +300,7 @@ footer
 		list-style-type: decimal
 		.text
 			padding: 15px 0
-			color: #003cff
+			color: #460707
 			font-size: 20px
 			
 	&_spec
@@ -305,21 +308,19 @@ footer
 		justify-content: left
 		text-align: start
 
-.profile
-	margin: -50px
-	padding: 50px 0
-	background-color: #ddd4c2
-	.col-md-6
-		padding-top: 40px
-		justify-content: center
-		text-align: center
-	.col-md-4
-		padding-top: 40px
-		justify-content: center
-		text-align: center
-	.col-md-12
-		justify-content: center
-		text-align: center
+.profile_
+	margin-top: 50px
+
+
+.faq
+	display: flex
+	text-align: center
+	justify-content: center
+	margin: 25px auto
+	&_header
+		margin-top: 100px
+	&_li
+		list-style: decimal
 
 
 
